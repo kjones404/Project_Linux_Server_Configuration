@@ -1,0 +1,248 @@
+body {
+  max-width: 900px;
+  margin: 0 auto 0 auto;
+  background-color: WhiteSmoke;
+  color: #222;
+  font-size: 1.23em;
+  font-family: 'Raleway', sans-serif;
+}
+
+img,
+embed,
+object,
+video {
+  max-width: 100%;
+}
+
+header {
+  width: 100%;
+  margin: 20px auto 0 auto;
+  box-shadow: 0 4px 2px -2px #888;
+  align-items: center;
+  background-color: #222;
+  color: WhiteSmoke;
+}
+
+h1 {
+  margin: 25px auto 0 auto;
+  font-family: 'Righteous', cursive;
+  font-weight: normal;
+}
+
+h2 {
+  border-bottom: 2px solid #222;
+  box-shadow: 0 4px 2px -2px #888;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+footer {
+  padding: 5px;
+  background-color: #222;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.65em;
+  color: #999;
+}
+
+a.basic {
+  display: block;
+  font-weight: bold;
+  color: #222;
+  text-decoration: none;
+}
+
+a.basic:hover {
+  background-color: #222;
+  color: WhiteSmoke;
+}
+
+a.basic:active {
+    background-color: WhiteSmoke;
+}
+
+a.alogo {
+  display: block;
+  color: #222;
+}
+
+a.alogo:visited {
+  color: #222;
+}
+
+button {
+    border: none;
+    background-color: WhiteSmoke;
+    font-size: 1em;
+    font-weight: bold;
+    color: #222;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+button:hover {
+  background-color: #222;
+  color: WhiteSmoke;
+}
+
+.add {
+  width: 50%;
+  margin: 30px auto 0 auto;
+  text-align: right;
+}
+
+.answer {
+  font-style: italic;
+  font-size: 0.75em;
+}
+
+.circle-icon {
+  background: WhiteSmoke;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  padding: 15px;
+}
+
+.collection {
+  width: 100%;
+  margin: 0 auto 10px auto;
+}
+
+.container {
+  width: 100%;
+}
+
+.create {
+  width: 100%;
+}
+
+.edit {
+  margin: 20px auto 0 auto;
+}
+
+.flash {
+  font-style: italic;
+}
+
+.flex {
+  display: flex;
+}
+
+.flogo {
+  display: block;
+  width: 75px;
+  margin: 5px auto 0 auto;
+}
+
+.halfpage {
+  max-width: 45%;
+}
+
+.header_edit {
+  display: block;
+  margin: 10px auto 10px auto;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.hlogo {
+  font-size: 50px;
+  color: #222;
+  margin: 10px;
+}
+
+.left {
+  text-align: left;
+  width: 50%;
+}
+
+.link {
+  width: 45%;
+  text-align: center;
+  margin: 0 auto 5px auto;
+}
+
+.lwarning {
+  color: #900;
+  font-weight: lighter;
+}
+
+.movie {
+  margin: 0 auto 10px auto;
+  max-width: 30%;
+}
+
+.old {
+  text-align: center;
+  width: 275px;
+  margin: 20px auto 0 auto;
+
+}
+
+.owner {
+  color: WhiteSmoke;
+  font-size: 0.75em;
+  background: #222;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  padding: 4px;
+}
+
+.poster {
+  border: 10px solid #222;
+  padding: 10px;
+  width: 220px;
+  height: 342px;
+}
+
+.question {
+  width: 100%;
+  margin: 0 auto 10px auto;
+}
+
+.right {
+  margin: 10px auto 10px auto;
+  text-align: right;
+  width: 50%;
+}
+
+.row {
+  width: 100%;
+}
+
+.side {
+  display: block;
+  width: 250px;
+}
+
+.single {
+  text-align: center;
+}
+
+.sub{
+    font-size: 0.75em;
+}
+
+.tname {
+  width: 50%;
+  text-align: left;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto 10px auto;
+  justify-content: space-around;
+}

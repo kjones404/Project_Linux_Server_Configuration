@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Righteous" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+    <title>Fresh Tomatoes v2.0</title>
+  </head>
+  <body>
+    <header>
+      <div class="flex">
+        <div class="hlogo">
+          <a class="hlogo" href="{{ url_for('home') }}"><i class="fas fa-film circle-icon"></i></a>
+        </div>
+        <div class="htext">
+          <h1>Fresh Tomatoes v2.0</h1>
+          <span>The Movie Collection Database</span>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="flex">
+        <div class="alert row left">
+          {% with messages = get_flashed_messages() %}
+          {% if messages %}
+          <ul>
+            {% for message in messages %}
+            <li><span class="flash lwarning">{{message}}</span></li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+          {% endwith %}
+        </div>
+        <div class="right sub">
+          {%if 'username' not in session %}
+          <a class="basic" href="{{url_for('showLogin')}}"><i class="fas fa-sign-in-alt"></i> Sign-In </a>
+          {% else %}
+          <a class="basic" href="{{url_for('gdisconnect')}}">Logout <i class="fas fa-sign-out-alt"></i></a>
+          {% endif %}
+        </div>
+      </div>
+      <div class="single">
+        <h1>Create A New Collection</h1>
+        <div class="movie">
+      <form action="{{ url_for('addCollection') }}" method = 'POST'>
+      <div class="header_edit">
+        <span>Collection Name:</span><br>
+        <input type = 'text' size='30' name = 'name' placeholder = 'Name Your Collection'><br>
+      </div>
+      <div class="flex">
+        <div class="link">
+          <a class="basic" href = "{{ url_for('home') }}"><i class="fas fa-ban"></i> Cancel </a>
+        </div>
+        <div class="link">
+          <button type='submit', value = 'Create'><i class="fas fa-trash-alt"></i> Create </button>
+        </div>
+      </div>
+      </form>
+      </div>
+    </div>
+    </main>
+    <footer>
+      <span class="footer_text">This product uses the TMDb API but is not endorsed or certified by TMDb.</span>
+      <img src="{{ url_for('static', filename='img/logo-green.png') }}" class="flogo" alt="The Movie Database Logo">
+    </footer>
+  </body>
+</html>
