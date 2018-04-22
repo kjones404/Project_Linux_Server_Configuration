@@ -12,7 +12,7 @@ from sqlalchemy.orm import sessionmaker
 from database_setup import Collection, Base, MovieItem, User
 
 
-engine = create_engine('postgresql:///moviecatalogs.db')
+engine = create_engine('postgresql://catalog:catalog@localhost/moviecatalogs')
 Base.metadata.bind = engine
 
 DBSession = sessionmaker(bind=engine)

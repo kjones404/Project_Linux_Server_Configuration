@@ -29,7 +29,7 @@ CLIENT_ID = json.loads(
 APPLICATION_NAME = "Fresh Tomatoes v2"
 
 # Configure Database
-engine = create_engine('postgresql:///moviecatalogs.db')
+engine = create_engine('postgresql://catalog:catalog@localhost/moviecatalogs')
 Base.metadata.bind = engine
 
 DBSession = sessionmaker(bind=engine)

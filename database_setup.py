@@ -71,7 +71,7 @@ class MovieItem(Base):
         }
 
 
-engine = create_engine('postgresql:///moviecatalogs.db')
+engine = create_engine('postgresql://catalog:catalog@localhost/moviecatalogs')
 
 
 Base.metadata.create_all(engine)
