@@ -26,10 +26,10 @@ app = Flask(__name__)
 # Set Google OAuth Information
 CLIENT_ID = json.loads(
     open('client_secrets.json', 'r').read())['web']['client_id']
-APPLICATION_NAME = "Fresh Tomatoes v2"
+APPLICATION_NAME = "Fresh Tomatoes v3"
 
 # Configure Database
-engine = create_engine('postgresql://catalog:catalog@localhost/moviecatalogs')
+engine = create_engine('postgresql://catalog:catalog@localhost/catalog')
 Base.metadata.bind = engine
 
 DBSession = sessionmaker(bind=engine)
@@ -507,4 +507,4 @@ def getUserID(email):
 if __name__ == '__main__':
     app.secret_key = 'super_secret_key'
     app.debug = True
-    app.run(host='0.0.0.0', port=80)
+    app.run()
