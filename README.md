@@ -2,6 +2,14 @@
 
 This project is for the Udacity Full Stack nanodegree program. The goal of this project is to a Ubuntu server to run the Item Catalog app:
 
+This sever has the following software/packages installed:
+
+* Ubuntu
+* Apache2
+* PostgreSQL
+* Flask
+* SQL Alchemy
+
 The hosted app can be found [Here](http://ec2-18-216-126-4.us-east-2.compute.amazonaws.com/).
 
 ## Setting Up Your server
