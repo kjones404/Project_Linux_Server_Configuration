@@ -2,7 +2,7 @@
 
 This project is for the Udacity Full Stack nanodegree program. The goal of this project is to a Ubuntu server to run the Item Catalog app:
 
-The hosted app can be found [Here](http:http://ec2-18-216-126-4.us-east-2.compute.amazonaws.com).
+The hosted app can be found [Here](http:http://ec2-18-216-126-4.us-east-2.compute.amazonaws.com/).
 
 ## Setting Up Your server
 
